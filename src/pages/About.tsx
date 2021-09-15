@@ -86,6 +86,7 @@ Wrapper = styled.div`
 `,
 Header = styled.section`
   height: 100vh;
+  background: #ccc;
   background: url(${({src}: {src: string}) => src}) no-repeat center;
   background-size: cover;
   transition: background .5s;
@@ -110,6 +111,7 @@ Background = styled.div`
     width: 100vw;
     padding-left: 1rem;
     margin-top: 1rem;
+    padding-right: 1rem;
 
   }
 `,

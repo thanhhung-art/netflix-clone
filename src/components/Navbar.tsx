@@ -31,16 +31,13 @@ Container = styled.nav`
     padding: .5rem 3rem;
     z-index: 999;
     @media (max-width: 768px){
-        padding: .8rem 1.5rem;
+        padding: .7rem 1.5rem;
     }
 `,
 Container2 = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 768px){
-        gap: 10px;
-    }
 `,
 Container3 = styled.div`
     @media (max-width: 768px){
@@ -51,7 +48,8 @@ Logo = styled.img`
     height: 35px;
     object-fit: cover;
     @media (max-width: 768px){
-        height: 25px;
+        width: 110px;
+        height: auto;
 }
 `,
 Title = styled.h2`
@@ -71,4 +69,8 @@ Button = styled.button<{join: boolean}>`
     margin-right: ${props => props.join ? "1rem": "0"};
     color: #fff;
     cursor: pointer;
+    @media (max-width: 768px) {
+        padding: .4rem;
+        font-size: .8rem;
+    }
 `;

@@ -30,7 +30,8 @@ Header = styled.header`
     padding-top: 7rem;
     margin-bottom: 4rem;
     @media (max-width: 768px) {
-        padding-top: 9rem;
+        padding-top: 4.5rem;
+        margin-bottom: 2rem;
     }
 `,
 Title = styled.h1`

@@ -89,13 +89,18 @@ var Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
   `,
   Image = styled.img`
     width: 420px;
     height: 250px;
     object-fit: cover;
     @media (max-width: 768px){
-      width: 150px;
+      width: 100%;
       height: 120px;
       border-radius: 10px;
     }

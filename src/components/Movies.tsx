@@ -102,7 +102,7 @@ var Container = styled.div`
       
     }
     @media screen and (max-width: 768px) {
-      min-width: 150px;
+      min-width: calc((100vw - 4rem) /  2);
       border-radius: 1rem;
       gap: .4rem;
     }
@@ -133,6 +133,7 @@ var Container = styled.div`
     width: 100%;
     height: 200px;
     object-fit: cover;
+    background-color: #ccc;
     @media (max-width: 768px){
       height: 100px;
       border-radius: 10px;

@@ -66,6 +66,7 @@ var Container = styled.div``,
     margin-bottom: 1rem;
     @media (max-width: 768px){
       margin-bottom: .5rem;
+      font-size: 1rem;
     }
   `,
   ArrowButton = styled.img<ArrowArgs>`
