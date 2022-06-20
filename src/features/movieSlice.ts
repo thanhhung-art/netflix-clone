@@ -51,7 +51,7 @@ export const {getMovieId, getMovieClips, getMovieClipsSuccess, getMoviesRecommen
 
 export default movieSlice.reducer;
 
-export function GetVideoClips (id: number){
+export function GetVideoClips (id: number): any{
     const key = process.env.REACT_APP_API_KEY;
     const url = `${movie_detail_http}/${id}/videos?api_key=${key}&language=en-US`;
 
@@ -66,7 +66,7 @@ export function GetVideoClips (id: number){
     }
 }
 
-export function GetRecommendsMovie (id: number){
+export function GetRecommendsMovie (id: number): any{
     const key = process.env.REACT_APP_API_KEY;
     const page = Math.floor(Math.random() * 3) + 1;
     const url = `${movie_detail_http}/${id}/recommendations?api_key=${key}&language=en-US&page=${page}"`;

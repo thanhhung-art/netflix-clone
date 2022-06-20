@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction, ThunkAction } from "@reduxjs/toolkit";
 import { AppDispatch } from "../app/store";
 
 const initialState = {
@@ -29,7 +29,7 @@ export const { getCategories ,getCategoriesSuccess, getCategoriesFailure } = cat
 
 export default categoriesSlice.reducer;
 
-export function fetchCategories() {
+export function fetchCategories(): any {
     const key = process.env.REACT_APP_API_KEY;
     const genres_list: string = `https://api.themoviedb.org/3/genre/movie/list?api_key=${key}`;
 
